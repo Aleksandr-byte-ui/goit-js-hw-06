@@ -1,9 +1,9 @@
-let input = document.getElementById("name-input");
-let nameOutput = document.getElementById("name-output");
+const input = document.getElementById("name-input");
+const nameOutput = document.getElementById("name-output");
 
 input.oninput = function () {
     if (input.value === '') {
-       nameOutput.innerHTML = 'незнакомец';
+       nameOutput.innerHTML = 'Anonymous';
     } else{
     nameOutput.innerHTML = input.value;
     }
