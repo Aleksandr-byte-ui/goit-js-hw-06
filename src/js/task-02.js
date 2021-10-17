@@ -12,9 +12,8 @@ const listEl = ingredients.forEach(ingredient => {
 
   const itemlistEl = document.createElement("li");
  itemlistEl.classList.add("item");
- itemlistEl.textContent = ingredient;
- itemEl.appendChild(itemlistEl);
+  itemlistEl.textContent = ingredient;
+ itemEl.append(itemlistEl);
 });
 
-console.log(itemEl);
 
