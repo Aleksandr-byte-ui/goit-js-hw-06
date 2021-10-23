@@ -27,11 +27,12 @@ const images = [
 
 
 
-for (let el of images) document.querySelector('.gallery').insertAdjacentHTML('beforeEnd', `<li><img src="${el.url}" alt="${el.alt}" width = 200 height = 150></li>`);
+//for (let el of images) document.querySelector('.gallery').insertAdjacentHTML('beforeEnd', `<li><img src="${el.url}" alt="${el.alt}" width = 200 height = 150></li>`);
 
-//const list = document.querySelector('.gallery');
-//const createimg = images.map(image => `<li> <img 
-//src="${image.url}"
+const list = document.querySelector('.gallery');
+const createimg = images.map(image =>
+  `<li> <img
+src="${image.url}"
 //alt="${image.alt}"/>
 //</li>`).join("")
-//list.insertAdjacentHTML('afterbegin', createimg)
+list.insertAdjacentHTML('afterbegin', createimg)
