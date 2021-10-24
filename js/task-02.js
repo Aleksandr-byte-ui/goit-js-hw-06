@@ -8,9 +8,9 @@ const ingredients = [
 ];
 const itemEl = document.querySelector("#ingredients");
 
-const listEl = ingredients.forEach(ingredient => {
+const listEl = ingredients.map(ListItemName => {
   const itemlistEl = document.createElement("li");
- itemlistEl.textContent = ingredient;
+  itemlistEl.textContent = ListItemName;
   itemlistEl.classList.add("item");
   return itemlistEl;
 });
